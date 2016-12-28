@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+  <link rel="stylesheet" href="style.css">
+  <script
+			  src="https://code.jquery.com/jquery-3.0.0.js"
+			  integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo="
+			  crossorigin="anonymous">
+  </script>
+  <!-- <script src="./jqscript/jquery-3.0.0.min.js"></script> -->
+  <script src="script.js"></script>
+  </head>
+  <body>
+
+  <!--All navs here in Container-->
+  <nav class="container">
+  <nav class="navbar">
+  <div class="flexparent navbar-div">
+    <div id='sprite1' class="flexchild"></div>
+    <div id='sprite2' class="flexchild"></div>
+    <div id='sprite3' class="flexchild"></div>
+    <div id='sprite4' class="flexchild"></div>
+    <div id='sprite5' class="flexchild"></div>
+    <div id='sprite6' class="flexchild"></div>
+  <form id='formSearch' action = '*' method='GET' class="flexchild">
+      <input type="text" placeholder="Search">
+      <button id="search_submit" type="submit">&#x2600;</button>
+    </form></div></nav>
+
+ <!--SITE LOGO-->
+  <div id='logo'></div>
+
+  <!--Hidden nav-bar. Appears on mobile display-->
+    <nav id="trend_hidden">
+    <ul>
+      <li><a href="">MEN</a></li>
+      <li><a href="">WOMEN</a></li>
+      <li><a href="">KIDS</a></li>
+      <li><a href="">STYLE</a></li>
+      </ul></nav>
+
+    <nav class="navbar flexparent">
+    <ul class="flexparent">
+        <li class="dropdown flexchild">
+          <a href="#">COLLECTIONS<span>&#9660;</span></a>
+          <ul class="dropdown_menu hidden_menu">
+            <li><a href="#">FOR TRUE LADIES</a></li>
+            <li><a href="#">FOR TRUE DUDES</a></li>
+            <li><a href="#">FEATURED ITEMS</a></li>
+            <li>----------</li>
+            <li><a href="#">SUMMER SALE!</a></li>
+            </ul></li>
+
+      <li class="dropdown flexchild">
+          <a href="#">LIFESTYLE<span>&#9660;</span></a>
+          <ul class="dropdown_menu hidden_menu">
+            <li><a href="#">METRO</a></li>
+            <li><a href="#">NEW COLLECTION</a></li>
+            <li><a href="#">FEATURED ITEMS</a></li>
+            <li>----------</li>
+            <li><a href="#">SUMMER SALE!</a></li>
+            </ul></li>
+
+        <li class="dropdown flexchild">
+          <a href="#">TECHNOLOGY<span>&#9660;</span></a>
+          <ul class="dropdown_menu hidden_menu">
+            <li><a href="#">FOR TRUE GEEKS</a></li>
+            <li><a href="#">NEW COLLECTION</a></li>
+            <li><a href="#">FEATURED ITEMS</a></li>
+            <li><a href="#">SUMMER SALE!</a></li>
+            </ul></li>
+        <li class="flexchild"><a href="#">ENTERTAINMENT</a></li>
+        <li class="flexchild"><a href="#">LIFESTYLE</a></li>
+        <li class="flexchild"><a href="#">SPORTS</a></li>
+      </ul>
+</nav> <!--nav class navbar ends-->
+</nav> <!--nav class container ends-->
+
+
+<!--Small black nav-bar with News and Cart Summary-->
+<div id='headerBar' class='flexparent' >
+    <div id='news'>August 17th, 2016: Breaking news article</div>
+    <div id='cartSummary'>cartSummary here</div>
+    <button type='button' id='cartUnwrap'>&#9661;</button>
+  </div>
+</nav>
+
+
+<!-- CAROUSEL No.1  -->
+<div id="ad_carousel_wrapper">
+  <!-- Wrapper for slides -->
+  <div class="carousel_inner flexparent">
+
+    <div class="item" id='ad1'>
+     <section class="ad">
+     <div class="innerjum_img" id='adImg1'><a href=""></a></div>
+     <div class="innerjum">
+      <h1>Where can I get some?</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iusto dignissimos dolorum maiores architecto itaque tenetur assumenda deleniti atque veritatis maxime.</p>
+      <button type="button"><a href="#">Shop now >></a></button>
+      </div>
+        </section></div>
+
+    <div class="item hidden_menu">
+     <section class="ad">
+     <div class="innerjum_img" id='adImg2'><a href=""></a></div>
+     <div class="innerjum">
+      <h1>Where can I get shoes #2?</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iusto dignissimos dolorum maiores architecto itaque tenetur assumenda deleniti atque veritatis maxime.consectetur adipisicing elit. Quod iusto dignissimos dolorum maiores architecto itaque tenetur assumenda.</p>
+      <button type="button"><a href="#">Shop now >></a></button>
+      </div>
+        </section></div>
+
+ <div class="item hidden_menu">
+     <section class="ad">
+     <div class="innerjum_img" id='adImg3'><a href=""></a></div>
+     <div class="innerjum">
+      <h1>Cooool! Shoes #3!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iusto dignissimos dolorum maiores architecto itaque tenetur assumenda deleniti atque veritatis maxime.</p>
+      <button type="button"><a href="#">Shop now >></a></button>
+      </div>
+        </section></div>
+  </div> <!-- Carousel inner <close--></close-->
+
+  <!-- Controls of car#1 inside of wrapper-->
+  <div id='ad_carousel_left'><div class='circle' ><div></div></div></div>
+  <div id='ad_carousel_right'><div class='circle' ><div></div></div></div>
+
+</div> <!-- Carousel wrapper close-->
+
+
+<!-- MAIN SECTION -->
+<main>
+<!-- Featured products -->
+<section class="containSec" id="featured_prod">
+  <header class='flexparent'>
+    <div>FEATURED</div>
+    <!-- Controls of car#2 inside of header-->
+    <div id='featured_carousel_controls'>
+    <div id='featured_carousel_left'></div>
+    <div id='featured_carousel_right'></div>
+    </div>
+  </header>
+
+<!-- Wrapper section-->
+<section id='carousel_inner2'>
+  <section id="feat1" class="start">
+     <div class='featured_img ' id='featImg1'></div>
+       <div class='prod_info'>
+       <p>Herbal Sport</p>
+       <p><span class="old_price">$101.88</span><span>$34.99</span></p>
+       </div>
+       <div class="shopping_cart black"></div>
+  </section>
+
+<section class="hidden_menu">
+     <div class='featured_img ' id='featImg2'></div>
+       <div class='prod_info'>
+       <p>Wonka Sport</p>
+       <p><span class="old_price">$101.88</span><span>$34.99</span></p>
+       </div>
+       <div class="shopping_cart black"></div>
+  </section>
+
+  <section class="hidden_menu">
+     <div class='featured_img ' id='featImg3'></div>
+       <div class='prod_info'>
+       <p>Nike Sport</p>
+       <p><span class="old_price">$101.88</span><span>$34.99</span></p>
+       </div>
+       <div class="shopping_cart black"></div>
+  </section>
+
+</section><!-- Wrapper section closed -->
+</section>  <!-- Featured products closed -->
+
+
+
+  <!-- NEW products -->
+  <section class = "containSec scrollbar" id="new_products">
+    <header><span>NEW PRODUCTS</span></header>
+  <!-- Flex container -->
+  <section class="flexparent">
+
+    <section class="flexchild">
+     <div class='newprod_img' id='newProdImg1'></div>
+       <div class='prod_info'>
+       <p>Wonka Sport</p>
+       <p><span class="old_price">$101.88</span><span>$34.99</span></p>
+       </div>
+       <div class="shopping_cart"></div>
+  </section>
+
+<section class="flexchild">
+     <div class='newprod_img' id='newProdImg2'></div>
+       <div class='prod_info'>
+       <p>Nike Sport</p>
+       <p><span class="old_price">$101.88</span><span>$34.99</span></p>
+       </div>
+       <div class="shopping_cart"></div>
+  </section>
+
+  <section class="flexchild">
+     <div class='newprod_img' id='newProdImg3'></div>
+       <div class='prod_info'>
+       <p>Adidas Casual</p>
+       <p><span class="old_price">$101.88</span><span>$34.99</span></p>
+       </div>
+       <div class="shopping_cart"></div>
+  </section>
+
+  <section class="flexchild">
+     <div class='newprod_img' id='newProdImg4'></div>
+       <div class='prod_info'>
+       <p>Sport Life</p>
+       <p><span class="old_price">$101.88</span><span>$34.99</span></p>
+       </div>
+       <div class="shopping_cart"></div>
+  </section>
+
+  <section class="flexchild">
+     <div class='newprod_img' id='newProdImg5'></div>
+       <div class='prod_info'>
+       <p>Bingo Bongo</p>
+       <p><span class="old_price">$101.88</span><span>$34.99</span></p>
+       </div>
+       <div class="shopping_cart"></div>
+  </section>
+
+  <section class="flexchild">
+     <div class='newprod_img' id='newProdImg6'></div>
+       <div class='prod_info'>
+       <p>Shoes #2!</p>
+       <p><span class="old_price">$101.88</span><span>$34.99</span></p>
+       </div>
+       <div class="shopping_cart"></div>
+  </section>
+
+  <section class="flexchild">
+     <div class='newprod_img' id='newProdImg7'></div>
+       <div class='prod_info'>
+       <p>Featured Shoes</p>
+       <p><span class="old_price">$101.88</span><span>$34.99</span></p>
+       </div>
+       <div class="shopping_cart"></div>
+  </section>
+  </section> <!-- End Flex Container -->
+  </section><!-- End NEW products -->
+
+
+
+  <nav id="trend_left">
+    <header><span>TRENDING NOW</span></header>
+    <ul>
+      <li><a href="">Men</a></li>
+      <li><a href="">Women</a></li>
+      <li><a href="">Kids</a></li>
+      <li><a href="">Accessories</a></li>
+      </ul></nav>
+
+
+<!-- Section Men-Women-Kids-Access -->
+  <section id="trending" class = "containSec">
+  <section class="flexparent"> <!-- Flex container -->
+
+    <section class="flexchild flexparent">
+     <div class='trending_img flexchild' id='trendImg1'></div>
+       <div class='prod_info flexchild'>
+       <p>Shop t-shirt</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+       <p><span class="old_price">$101.88</span><span>$34.99</span></p>
+       <div class="shopping_cart"></div>
+       <button>Add to cart</button>
+       <div class="availQuantity">?</div>
+       </div>
+  </section>
+
+<section class="flexchild flexparent">
+     <div class='trending_img flexchild' id='trendImg2'></div>
+       <div class='prod_info flexchild'>
+       <p>SNEAKER</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+       <p><span class="old_price">$101.88</span><span>$34.99</span></p>
+       <div class="shopping_cart"></div>
+       <button>Add to cart</button>
+       <div class="availQuantity">?</div>
+       </div>
+  </section>
+
+  <section class="flexchild flexparent">
+     <div class='trending_img flexchild' id='trendImg3'></div>
+       <div class='prod_info flexchild'>
+       <p>BACKPACK</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+       <p><span class="old_price">$101.88</span><span>$34.99</span></p>
+       <div class="shopping_cart"></div>
+       <button>Add to cart</button>
+       <div class="availQuantity">?</div>
+       </div>
+  </section>
+
+  <section class="flexchild flexparent">
+     <div class='trending_img flexchild' id='trendImg4'></div>
+       <div class='prod_info flexchild'>
+       <p>HERITAGE</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+       <p><span class="old_price">$101.88</span><span>$34.99</span></p>
+       <div class="shopping_cart"></div>
+       <button>Add to cart</button>
+       <div class="availQuantity">?</div>
+       </div>
+  </section>
+  </section> <!-- Section flexparent closed -->
+  </main> <!-- Main closed -->
+
+
+<!-- CAROUSEL BOTTOM - Sponsors, links, etc.  -->
+<div id="links_carousel">
+  <!-- Wrapper for slides -->
+  <div class="flexparent">
+    <div class='flexchild'>
+    <div class='logos_img funRotate' id='logoImg1'></div>
+    <div class='logos_img funRotate hidden_menu' id='logoImg2'></div>
+    <div class='logos_img funRotate hidden_menu' id='logoImg3'></div>
+    <div class='logos_img funRotate hidden_menu' id='logoImg4'></div>
+  </div>
+  <div class='flexchild'>
+    <div class='logos_img funRotate' id='logoImg2'></div>
+    <div class='logos_img funRotate hidden_menu' id='logoImg3'></div>
+    <div class='logos_img funRotate hidden_menu' id='logoImg4'></div>
+    <div class='logos_img funRotate hidden_menu' id='logoImg1'></div>
+  </div>
+  <div class='flexchild'>
+    <div class='logos_img funRotate' id='logoImg3'></div>
+    <div class='logos_img funRotate hidden_menu' id='logoImg4'></div>
+    <div class='logos_img funRotate hidden_menu' id='logoImg1'></div>
+    <div class='logos_img funRotate hidden_menu' id='logoImg2'></div>
+  </div>
+  <div class='flexchild'>
+    <div class='logos_img funRotate' id='logoImg4'></div>
+    <div class='logos_img funRotate hidden_menu' id='logoImg1'></div>
+    <div class='logos_img funRotate hidden_menu' id='logoImg2'></div>
+    <div class='logos_img funRotate hidden_menu' id='logoImg3'></div>
+  </div>
+  </div>
+</div> <!-- Bottom carousel closed -->
+
+
+      <!-- FOOTER No.0 - FALSE FOOTER Z-INDEX -1  -->
+<footer id="footer0"></footer>
+
+      <!-- FOOTER No.1 - MISC INFO  -->
+<footer id="footer1" class="flexparent">
+  <section class="flexchild">
+  <header><span>Who We Are</span></header>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi facere qui debitis unde. Illo harum sequi et sed. Fuga neque porro voluptates qui molestiae similique rerum.</p>
+    <p>Address of the Company, Country</p>
+    <p>+145(014)999-9999</p>
+    <p>info@example.com</p>
+  </section>
+
+  <section class="flexchild">
+  <header><span>Categories</span></header>
+  <section class="flexchild"> <!--wrapper -->
+    <nav class="flexchild">
+    <ul>
+      <li><a href="">New collection</a></li>
+      <li><a href="">Best sellers</a></li>
+      <li><a href="">Manufacturers</a></li>
+      <li><a href="">Suppliers</a></li>
+      <li><a href="">New products</a></li>
+      </ul>
+    </nav>
+    <nav class="flexchild">
+    <ul>
+      <li><a href="#">New collection</a></li>
+      <li><a href="#">Best sellers</a></li>
+      <li><a href="#">Manufacturers</a></li>
+      <li><a href="#">Suppliers</a></li>
+      <li><a href="#">New products</a></li>
+      </ul>
+    </nav>
+    <nav class="flexchild">
+    <ul>
+      <li><a href="">New collection</a></li>
+      <li><a href="">Best sellers</a></li>
+      <li><a href="">Manufacturers</a></li>
+      <li><a href="">Suppliers</a></li>
+      <li><a href="">New products</a></li>
+      </ul>
+    </nav>
+    </section><!--wrapper -->
+    </section>
+
+  <section class="tweet flexchild">
+  <header><span>Latest Tweet</span></header>
+    <ul>
+      <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quibusdam ea incidunt libero natus adipisci.</p></li>
+      <li><p>Ipsum dolor sit amet, consectetur adipisicing elit. Et quibusdam ea incidunt libero natus adipisci.</p></li>
+      <li><p>Consectetur adipisicing elit. Et quibusdam ea incidunt libero natus adipisci. Lorem ipsum dolor sit amet.</p></li>
+      </ul>
+    </section>
+      </footer>
+
+
+  <!-- FOOTER No.2 - Copyright, additional navigation  -->
+  <footer id="footer2" class="flexparent">
+    <p class="flexchild">Copyright &copy; by Kopasoft</p>
+    <nav class="flexchild">
+    <ul class="flexparent">
+      <li class="flexchild"><a href="">Home</a></li>
+      <li class="flexchild"><a href="">My Cart</a></li>
+      <li class="flexchild"><a href="">Checkout</a></li>
+      <li class="flexchild"><a href="">Completed Orders</a></li>
+      <li class="flexchild"><a href="">Contact Us</a></li>
+      </ul>
+      </nav>
+      <div class="flexchild"><a href="#logo"><b>BACK!</b></a></div>
+    </footer>
+
+
+
+  </body>
+</html>
