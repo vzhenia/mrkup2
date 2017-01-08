@@ -47,9 +47,9 @@ footer{
   }
 .navbar-div div.flexchild:hover{
 opacity: 0.8;
-}  
+}
 #logo{
-  background-image: url('images/sitelogo.jpg');
+  background-image: url('./images/sitelogo.jpg');
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -62,32 +62,32 @@ opacity: 0.8;
   left:50px;
 }
 #sprite1 {
-	background: url('images/sprites.png') no-repeat -365px -43px;
+	background: url('./images/sprites.png') no-repeat -365px -43px;
 	width: 30px;
 	height: 34px;
 }
 #sprite2 {
-	background: url('images/sprites.png') no-repeat -523px -164px;
+	background: url('./images/sprites.png') no-repeat -523px -164px;
 	width: 33px;
 	height: 33px;
 }
 #sprite3 {
-	background: url('images/sprites.png') no-repeat -485px -82px;
+	background: url('./images/sprites.png') no-repeat -485px -82px;
 	width: 30px;
 	height: 34px;
 }
 #sprite4 {
-	background: url('images/sprites.png') no-repeat -803px -164px;
+	background: url('./images/sprites.png') no-repeat -803px -164px;
 	width: 33px;
 	height: 34px;
 }
 #sprite5 {
-	background: url('images/sprites.png') no-repeat -684px -126px;
+	background: url('./images/sprites.png') no-repeat -684px -126px;
 	width: 32px;
 	height: 29px;
-} 
+}
 #sprite6 {
-	background: url('images/sprites.png') no-repeat -204px -125px;
+	background: url('./images/sprites.png') no-repeat -204px -125px;
 	width: 32px;
 	height: 33px;
 }
@@ -171,7 +171,7 @@ margin-left: 30%;
 
 
 /*CAROUSEL #1 - Ad section*/
-section.ad{ 
+section.ad{
   display: flex;
   flex-flow:row;
   height: 35rem;
@@ -181,7 +181,7 @@ section.ad{
   padding-right:100px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.innerjum{  
+.innerjum{
   align-items:stretch;
   flex-shrink: 2;
   background-color:transparent;
@@ -214,13 +214,13 @@ section.ad{
   margin-top: 30px;
 }
 #adImg1{
-background-image: url('images/Layer143.png');
+background-image: url('./images/Layer143.png');
 }
 #adImg2{
-background-image: url('images/Layer29.png');
+background-image: url('./images/Layer29.png');
 }
 #adImg3{
-background-image: url('images/Layer136.png');
+background-image: url('./images/Layer136.png');
 }
 #ad_carousel_wrapper{
   background-image: linear-gradient(270deg, lightgrey, white);
@@ -292,7 +292,7 @@ section.containSec{
 font-size: 1rem;
 font-weight: bold;
 margin-left: 20px;
-min-height:2.6rem; 
+min-height:2.6rem;
 }
 #featured_prod p+p{
 font-size: 0.8rem;
@@ -310,20 +310,20 @@ font-weight:400;
   margin-left: 20px;
 }
 #featImg1{
-background-image: url('images/Layer133.png');
+background-image: url('./images/Layer133.png');
 }
 #featImg2{
-background-image: url('images/Layer134.png');
+background-image: url('./images/Layer134.png');
 }
 #featImg3{
-background-image: url('images/Layer135.png');
+background-image: url('./images/Layer135.png');
 }
 .prod_info{
   max-width: 65%;
   display: inline-block;
 }
 .shopping_cart{
-  background: url('images/sprites.png') no-repeat -44px -164px;
+  background: url('./images/sprites.png') no-repeat -44px -164px;
 	width: 36px;
 	height: 36px;
   background-color:red;
@@ -350,7 +350,7 @@ background-image: url('images/Layer135.png');
   font-weight:bold;
   padding-left:20px;
   flex-flow: row nowrap;
-  align-items: center; 
+  align-items: center;
 }
 #featured_prod>header>div{
   flex:1;
@@ -429,25 +429,25 @@ section#new_products .flexchild{
   margin-left: 20px;
 }
 #newProdImg1{
-background-image: url('images/Layer134.png');
+background-image: url('./images/Layer134.png');
 }
 #newProdImg2{
-background-image: url('images/Layer135.png');
+background-image: url('./images/Layer135.png');
 }
 #newProdImg3{
-background-image: url('images/Layer136.png');
+background-image: url('./images/Layer136.png');
 }
 #newProdImg4{
-background-image: url('images/Layer143.png');
+background-image: url('./images/Layer143.png');
 }
 #newProdImg5{
-background-image: url('images/Layer134.png');
+background-image: url('./images/Layer134.png');
 }
 #newProdImg6{
-background-image: url('images/Layer135.png');
+background-image: url('./images/Layer135.png');
 }
 #newProdImg7{
-background-image: url('images/Layer136.png');
+background-image: url('./images/Layer136.png');
 }
 .prod_info p{
 font-size: 1rem;
@@ -464,7 +464,7 @@ min-width: 120px;
 /*Scrolling fancy*/
 .scrollbar::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color:red; 
+    background-color:red;
 }
 .scrollbar::-webkit-scrollbar-track {
   background-color:lightgrey;
@@ -517,7 +517,7 @@ nav#trend_left{
   display:inline-block;
   vertical-align:top;
   background-color: white;
-  height: 280px;	
+  height: 280px;
 }
 nav#trend_left>header{
   height:40px;
@@ -613,8 +613,8 @@ section#trending section.flexchild{
   z-index: 1;
 }
 .info{
-	max-height:100px; 
-	width:100px; 
+	max-height:100px;
+	width:100px;
 	border:1px dotted green;
 	background-color:lightgreen;
 	opacity:0.8;
@@ -627,18 +627,18 @@ section#trending section.flexchild{
 }
 section#trending div.prod_info{
   padding:10px;
-} 
+}
 #trendImg1{
-background-image: url('images/Layer29.png');
+background-image: url('./images/Layer29.png');
 }
 #trendImg2{
-background-image: url('images/Layer155.png');
+background-image: url('./images/Layer155.png');
 }
 #trendImg3{
-background-image: url('images/Layer156.png');
+background-image: url('./images/Layer156.png');
 }
 #trendImg4{
-background-image: url('images/Layer157.png');
+background-image: url('./images/Layer157.png');
 }
 section#trending .shopping_cart{
 margin-top: 0;
@@ -680,9 +680,9 @@ div#links_carousel{
   cursor: pointer;
 }
 div#links_carousel .flexparent{
-  flex-flow:row nowrap; 
+  flex-flow:row nowrap;
   width:100%;
-  overflow:hidden; 
+  overflow:hidden;
 }
 div#links_carousel .flexchild{
   flex:1;
@@ -699,16 +699,16 @@ div#links_carousel .flexchild{
   margin: 5px 0px 10px 0;
 }
 #logoImg1{
-background-image: url('images/Logo_0.png');
+background-image: url('./images/Logo_0.png');
 }
 #logoImg2{
-background-image: url('images/Logo_1.png');
+background-image: url('./images/Logo_1.png');
 }
 #logoImg3{
-background-image: url('images/Logo_2.png');
+background-image: url('./images/Logo_2.png');
 }
 #logoImg4{
-background-image: url('images/Logo_1.png');
+background-image: url('./images/Logo_1.png');
 }
 .newClass{
     height:0px;
@@ -788,7 +788,7 @@ footer#footer2 li{
 }
 footer#footer2 a{
   font-size:0.8rem;
-  color:white;  
+  color:white;
   text-decoration:none;
 }
 footer#footer2.flexparent, footer#footer2 ul.flexparent{
